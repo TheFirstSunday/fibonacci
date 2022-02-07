@@ -1,0 +1,38 @@
+{
+  "name": "markdownlint-config-fibonacci",
+  "version": "0.0.0",
+  "description": "markdownlint-config",
+  "keywords": [
+    "markdownlint-config"
+  ],
+  "author": "Sunday <2621949203@qq.com>",
+  "homepage": "https://github.com/TheFirstSunday/fibonacci.git",
+  "license": "ISC",
+  "main": "./lib/index.js",
+  "module": "./es/index.js",
+  "types": "./lib/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "es",
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheFirstSunday/fibonacci"
+  },
+  "scripts": {
+    "watch": "tsc -p tsconfig.json -w",
+    "build": "tsc -p tsconfig.json",
+    "prepare": "yarn build",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "devDependencies": {
+    "markdownlint": "^0.21.1"
+  }
+}

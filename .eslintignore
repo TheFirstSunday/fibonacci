@@ -1,0 +1,11 @@
+# script
+scripts/**
+
+# build
+**/dist/**
+**/lib/**
+**/es/**
+
+# umi
+.umi
+.umirc.js

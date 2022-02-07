@@ -1,0 +1,54 @@
+{
+  "name": "eslint-config-fibonacci",
+  "version": "0.0.0",
+  "description": "eslint-config",
+  "keywords": [
+    "eslint-config"
+  ],
+  "author": "Sunday <2621949203@qq.com>",
+  "homepage": "https://github.com/TheFirstSunday/fibonacci.git",
+  "license": "ISC",
+  "main": "./lib/index.js",
+  "module": "./es/index.js",
+  "types": "./lib/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "es",
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheFirstSunday/fibonacci"
+  },
+  "scripts": {
+    "watch": "tsc -p tsconfig.json -w",
+    "build": "tsc -p tsconfig.json",
+    "prepare": "yarn build",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "@commitlint/config-conventional": "^12.1.4",
+    "commitlint-plugin-rules": "^0.0.0"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.15.8",
+    "@types/eslint": "^7.28.1",
+    "@types/node": "^15.9.0",
+    "babel-eslint": "^10.1.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-vue": "^7.19.1",
+    "vue-eslint-parser": "^7.11.0"
+  }
+}
